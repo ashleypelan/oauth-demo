@@ -4,7 +4,6 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
     if user
      p
        |Hello #{user.displayName}
@@ -13,3 +12,4 @@ html
     else
      p
        a(href="/auth/linkedin") Login
+    block content
